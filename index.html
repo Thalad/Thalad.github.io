@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <title>Ttalbi Aadil Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>My Portfolio</h1>
+        </div>
+        <nav class="main_menu">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#education_experience">Education & Expérience</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="social_network"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="social_network"><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li class="social_network"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="contact">
+                <!--Main title-->
+                <h2>Me contacter.</h2>
+                <!--End main title-->
+
+                <!--Map-->
+                <div class="block_map">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.5520014946364!2d2.356003815416185!3d48.962015779297865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6696c06184b3f%3A0x60c107303599c3e9!2s10+Sentier+du+Chemin+Neuf%2C+93380+Pierrefitte-sur-Seine!5e0!3m2!1sfr!2sfr!4v1512054464013"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--End map-->
+
+
+
+                <form method="post" action="send.php">
+                    <div class="medium">
+                        <input type="text" id="name" name="name" required="" class="form_control form-input" placeholder="YOUR NAME *">
+                        <input type="email" id="email" name="email" required="" class="form_control form-input" placeholder="YOUR E-MAIL *">
+                        <input type="text" class="form_control form-input" name="subject" placeholder="SUBJECT">
+                    </div>
+                    <div class="medium">
+                        <textarea class="form_control textarea" id="message" name="message" required="" placeholder="YOUR MESSAGE *"></textarea>
+                    </div>
+                    <button class="btn btn-secondary btn-lg btn-block button" type="submit">Envoyer</button>
+                </form>
+        </section>
+
+    </div>
+
+</body>
+</html>

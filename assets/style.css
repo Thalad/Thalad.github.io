@@ -1,0 +1,150 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: "ano";
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: "ano";
+    src: url("fonts/ano/ano.ttf") format("ttf"),
+    url("fonts/ano/ano.eot") format("eot"),
+    url("fonts/ano/ano.woff2") format("woff2"),
+    url("fonts/ano/ano.woff") format("woff");
+}
+
+/* Header */
+header {
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+    /* Title*/
+    header .title {
+        float: left;
+    }
+
+    header .title h1 {
+        font-size: 1.3em;
+        line-height: 1.3em;
+        text-decoration: underline;
+    }
+    /* End Title */
+
+
+    /* Main Menu */
+    .main_menu {
+
+        float: right;
+    }
+
+    .main_menu ul {
+        text-align: right;
+    }
+
+    .main_menu ul li {
+        float: left;
+        margin-left: 15px;
+    }
+
+    .main_menu ul li:first-child {
+        margin-left: 0;
+    }
+
+    .main_menu ul li a {
+        color: #000;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .main_menu ul .social_network {
+        margin-left: 20px;
+    }
+
+    .main_menu ul .social_network a {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        top: -4px;
+        position: relative ;
+    }
+    /* End Main Menu */
+/* End Header */
+
+
+
+
+/* Container */
+.container {
+    display:-webkit-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+    /* Contact */
+    #contact {
+        background:#f7f7f7;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #contact h2 {
+        font-size: 1.6em;
+        padding: 50px 0 20px 0;
+    }
+
+    #contact .block_map {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contact .block_map iframe {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    #contact form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contact .medium {
+        width: 49%;
+        float: left;
+    }
+
+    #contact .medium:first-child {
+        margin-right: 2%;
+    }
+
+    #contact .form_control {
+
+        border: 0;
+        width: 100%;
+        height: 30px;
+        padding: 6px 12px;
+        color: #222;
+        text-indent: 20px;
+        background-color: #fff;
+        background-image: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+
+    #contact textarea {
+        height: 210px !important;
+        padding-top: 15px;
+        border-radius: 0;
+    }
+    /* End Contact */
+/* End Container */
