@@ -98,6 +98,103 @@ header {
     margin: 0 auto;
 }
 
+    /* presentation */
+    #presentation {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: block;
+    }
+
+    #presentation span {
+        color: #dddddd;
+        font-weight: 800;
+    }
+
+    #presentation h2 {
+        font-weight: 800;
+    }
+    
+    #presentation p {
+        margin: 10px 0;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    /* End presentation */
+
+    /* Service */
+    #service {
+        width: 100%;
+        background-color: #f6f6f6;
+        display: inline-block;
+    }
+
+    #service .content {
+        padding: 10px 0 47px 0;
+    }
+
+    #service h2 {
+        font-size: 1.6em;
+        padding: 50px 0 40px 0;
+        text-align: center;
+    }
+
+    #service .service_content {
+        width: 20%;
+        margin-left: 4%;
+        float: left;
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .01);
+        border-bottom: 5px solid transparent;
+        transition: all .1s ease-in-out;
+    }
+
+    #service .service_content:hover {
+        background: #ffffff none repeat scroll 0 0;
+        border-bottom: 5px solid #333;
+        box-shadow: 0 0 17px 0 #ddd;
+        margin-top: -3px;
+    }
+
+    #service .service_content h3 {
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        margin: 15px 0;
+        font-weight: 700;
+        font-size: 21px;
+        color: #333;
+    }
+
+    #service .service_content p {
+        line-height: 32px;
+        color: #222;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    #service .ico {
+        font-size: 30px;
+        box-shadow: 0 0 20px -2px rgba(60, 60, 60, .3);
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        margin:20px auto 0 auto;
+    }
+
+    #service .det {
+        padding: 0 15px 10px 15px;
+    }
+
+    #service .service_content:hover .ico {
+        color:#fff;
+        background:#333;
+        transition: 700ms ease;
+    }
+    /* End Service */
 
     /* INFO */
     #info {
@@ -216,3 +313,19 @@ header {
     }
     /* End Contact */
 /* End Container */
+
+
+/* Resp */
+@media (max-width: 991px) {
+    
+}
+/* End Resp */
+
+
+/* Print */
+@media print {
+    #contact {
+        display: none;
+    }
+}
+/* End Print */
