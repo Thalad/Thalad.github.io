@@ -10,6 +10,9 @@
     list-style: none;
 }
 
+.clear {
+    clear:both;
+}
 
 /* Fonts */
 @font-face {
@@ -20,6 +23,13 @@
     url("fonts/ano/ano.woff") format("woff");
 }
 
+
+    #info .info_list i, #info .info_list:hover i, #contact .button:hover, #contact .button:focus, #contact .button {
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
 /* Header */
 header {
     width: 90%;
@@ -83,10 +93,47 @@ header {
 
 /* Container */
 .container {
-    display:-webkit-box;
+    display:block;
     width: 100%;
     margin: 0 auto;
 }
+
+
+    /* INFO */
+    #info {
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    #info .info_list {
+        width: 25%;
+        float: left;
+    }
+
+    #info .info_list h2 {
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+
+    #info .info_list i {
+        color: #333;
+        font-size: 35px;
+        margin: 15px 0 10px 0;
+    }
+
+    #info .info_list:hover i {
+        transform: scale(1.2);
+    }
+
+    #info .info_list a {
+        text-decoration: underline;
+        color: #000000;
+    }
+
+    /* END INFO */
 
     /* Contact */
     #contact {
@@ -154,12 +201,18 @@ header {
         color: #333;
         font-family: 'poppins', sans-serif;
         border: 1px solid #333;
+        cursor: pointer;
         width: 100%;
         margin: 15px 0 0 0;
         text-transform: uppercase;
         letter-spacing: 1pt;
         padding: 14px 0;
         border-radius: 0;
+    }
+
+    #contact .button:hover, #contact .button:focus {
+        background-color: #333;
+        color: #ffffff;
     }
     /* End Contact */
 /* End Container */
